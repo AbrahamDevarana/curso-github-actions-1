@@ -17,7 +17,7 @@ on:
           type: choice
           options:
             - Pizza
-            - Hamburgesa
+            - Hamburguesa
             - Hotdog
         trabajo:
           description: 'En qué trabajas'
@@ -34,7 +34,7 @@ jobs:
       - name: Definir Comida
         run: echo "FOOD=${{ inputs.comida_favorita }}" >> $GITHUB_ENV
       - name: Tu trabajo
-        run: echo "JOB${{ inputs.trabajo }}" >> $GITHUB_ENV
+        run: echo "JOB=${{ inputs.trabajo }}" >> $GITHUB_ENV
       - name: Hola Mundo
         run: node index.js
     
